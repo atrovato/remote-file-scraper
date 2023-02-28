@@ -4,7 +4,11 @@
   "description": "Get files from remote server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "prettier": "prettier --check '**/*.js' '**/*.json'",
+    "prettier-fix": "prettier --write '**/*.js' '**/*.json'",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/atrovato/remote-file-scraper/issues"
   },
-  "homepage": "https://github.com/atrovato/remote-file-scraper#readme"
+  "homepage": "https://github.com/atrovato/remote-file-scraper#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^40.0.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-no-call": "^1.2.5",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-require-jsdoc": "^1.0.4",
+    "prettier": "^2.8.4"
+  }
 }
