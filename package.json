@@ -1,0 +1,19 @@
+{
+  "name": "remote-file-scraper",
+  "version": "1.0.0",
+  "description": "Get files from remote server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atrovato/remote-file-scraper.git"
+  },
+  "author": "Alexandre Trovato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atrovato/remote-file-scraper/issues"
+  },
+  "homepage": "https://github.com/atrovato/remote-file-scraper#readme"
+}
