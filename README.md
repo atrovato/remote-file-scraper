@@ -51,10 +51,11 @@ npm start
 
 ### Downloaders
 
-| Downloader | Key        | Description                                                                                   |
-| :--------- | :--------- | :-------------------------------------------------------------------------------------------- |
-| File list  | `filelist` | Generates a file with all URLs.<br />See [File list configuration](#file-list-configuration). |
-| pyLoad     | `pyload`   | pyLoad downloader.                                                                            |
+| Downloader                | Key         | Description                                                                                                                         |
+| :------------------------ | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| File list                 | `filelist`  | Generates a file with all URLs.<br />See [File list configuration](#file-list-configuration).                                       |
+| Synology Download Station | `dlstation` | Synology Download Station downloader.<br />See [Synology Download Station configuration](#synology-download-station-configuration). |
+| pyLoad                    | `pyload`    | pyLoad downloader.                                                                                                                  |
 
 #### File list configuration
 
@@ -62,3 +63,11 @@ npm start
 | :-------------- | :------------------------------------------------------------------------------------------------ | :----- | :------------ | :--------------------------- |
 | FILELIST_LIMIT  | The maximum number of URL for a file.<br />If `limit <= 0`, it all URLs will be in a single file. | Number |               | `FILELIST_LIMIT=50`          |
 | FILELIST_OUTPUT | The output direction to generate files.                                                           | String | `./tmp`       | `FILELIST_OUTPUT=/tmp/files` |
+
+#### Synology Download Station configuration
+
+| Variable                 | Description                                  | Type   | Default value | Example                                   |
+| :----------------------- | :------------------------------------------- | :----- | :------------ | :---------------------------------------- |
+| DOWNLOADSTATION_URL      | URL to connect to Synology Download Station. | String |               | `DOWNLOADSTATION_URL=https://my-nas:5000` |
+| DOWNLOADSTATION_ACCOUNT  | Login/username of the account to use.        | String |               | `DOWNLOADSTATION_ACCOUNT=admin`           |
+| DOWNLOADSTATION_PASSWORD | Password of the account to use.              | String |               | `DOWNLOADSTATION_PASSWORD=password`       |
