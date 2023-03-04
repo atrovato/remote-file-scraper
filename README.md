@@ -1,5 +1,22 @@
 # remote-file-scraper
-Get files from remote server
+
+Get files from remote server.
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Run](#run)
+  - [Interactive mode](#interactive-mode)
+  - [Pre-filled mode](#pre-filled-mode)
+- [Environment variable](#environment-variable)
+  - [Variables](#variables)
+  - [Scrapers](#scrapers)
+  - [Downloaders](#downloaders)
+    - [File list configuration](#file-list-configuration)
+    - [Synology Download Station configuration](#synology-download-station-configuration)
+- [Docker](#docker)
+  - [Interactive mode](#interactive-mode-1)
+  - [Batch mode](#batch-mode)
+
 
 ## Requirements
 
