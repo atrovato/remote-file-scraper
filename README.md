@@ -38,10 +38,12 @@ npm start
 | URL        | The URL to scrap                                                                   | URL     |               | `URL=https://my-own-server.url` |
 | KIND       | The key kind of page to scrap, see [kinds paragraph](#kinds)                       | String  |               | `KIND=apache`                   |
 | LOG_LEVEL  | Level of log to print<br/> Possible values: `error, warn, info, debug, trace, log` | String  | `info`        | `LOG_LEVEL=debug`               |
+| RESULT_DIR | Path result storing                                                                | String  | `./tmp`       | `RESULT_DIR=/scraper`           |
 
 ### Kinds
 
-| Kind        | Key       | Description                               |
-| :---------- | :-------- | :---------------------------------------- |
-| Apache      | `apache`  | Scrap Apache HTTPD server directory list. |
-| Archive.org | `archive` | Scrap Archive.org files.                  |
+| Kind        | Key       | Description                                                                  |
+| :---------- | :-------- | :--------------------------------------------------------------------------- |
+| Apache      | `apache`  | Scrap Apache HTTPD server directory list.                                    |
+| Archive.org | `archive` | Scrap Archive.org files.                                                     |
+| Local file  | `local`   | Scrap generated results on local system.<br /> See [RESULT_DIR](#variables). |
