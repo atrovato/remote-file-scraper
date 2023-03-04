@@ -71,3 +71,22 @@ npm start
 | DLSTATION_URL      | URL to connect to Synology Download Station. | String | `DLSTATION_URL=https://my-nas:5000` |
 | DLSTATION_ACCOUNT  | Login/username of the account to use.        | String | `DLSTATION_ACCOUNT=admin`           |
 | DLSTATION_PASSWORD | Password of the account to use.              | String | `DLSTATION_PASSWORD=password`       |
+
+## Docker
+
+### Interactive mode
+
+```shell
+docker run -it atrovato/remote-file-scraper:latest
+```
+
+### Batch mode
+
+```shell
+docker run \
+-v /path/to/mount:/tmp \
+-e BATCH_MODE=true \
+-e RESULT_DIR=/tmp \
+# add all variables
+atrovato/remote-file-scraper:latest
+```

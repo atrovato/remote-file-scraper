@@ -1,0 +1,9 @@
+node_modules
+tmp
+
+.env
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc.json
