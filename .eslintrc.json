@@ -21,7 +21,7 @@
     "after": true
   },
   "rules": {
-    "no-console": "off",
+    "no-console": "error",
     "semi": ["error", "always"],
     "quotes": [
       "error",

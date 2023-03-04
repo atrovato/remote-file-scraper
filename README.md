@@ -32,11 +32,12 @@ npm start
 
 ### Variables
 
-| Variable   | Description                                                  | Type    | Example                         |
-| :--------- | :----------------------------------------------------------- | :------ | :------------------------------ |
-| BATCH_MODE | Allow to run tool in batch mode, without user interaction    | boolean | `BATCH_MODE=true`               |
-| URL        | The URL to scrap                                             | URL     | `URL=https://my-own-server.url` |
-| KIND       | The key kind of page to scrap, see [kinds paragraph](#kinds) | String  | `KIND=apache`                   |
+| Variable   | Description                                                                        | Type    | Default value | Example                         |
+| :--------- | :--------------------------------------------------------------------------------- | :------ | :------------ | :------------------------------ |
+| BATCH_MODE | Allow to run tool in batch mode, without user interaction                          | boolean | `false`       | BATCH_MODE=true`                |
+| URL        | The URL to scrap                                                                   | URL     |               | `URL=https://my-own-server.url` |
+| KIND       | The key kind of page to scrap, see [kinds paragraph](#kinds)                       | String  |               | `KIND=apache`                   |
+| LOG_LEVEL  | Level of log to print<br/> Possible values: `error, warn, info, debug, trace, log` | String  | `info`        | `LOG_LEVEL=debug`               |
 
 ### Kinds
 
