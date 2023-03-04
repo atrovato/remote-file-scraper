@@ -66,8 +66,8 @@ npm start
 
 #### Synology Download Station configuration
 
-| Variable           | Description                                  | Type   | Default value | Example                             |
-| :----------------- | :------------------------------------------- | :----- | :------------ | :---------------------------------- |
-| DLSTATION_URL      | URL to connect to Synology Download Station. | String |               | `DLSTATION_URL=https://my-nas:5000` |
-| DLSTATION_ACCOUNT  | Login/username of the account to use.        | String |               | `DLSTATION_ACCOUNT=admin`           |
-| DLSTATION_PASSWORD | Password of the account to use.              | String |               | `DLSTATION_PASSWORD=password`       |
+| Variable           | Description                                  | Type   | Example                             |
+| :----------------- | :------------------------------------------- | :----- | :---------------------------------- |
+| DLSTATION_URL      | URL to connect to Synology Download Station. | String | `DLSTATION_URL=https://my-nas:5000` |
+| DLSTATION_ACCOUNT  | Login/username of the account to use.        | String | `DLSTATION_ACCOUNT=admin`           |
+| DLSTATION_PASSWORD | Password of the account to use.              | String | `DLSTATION_PASSWORD=password`       |
