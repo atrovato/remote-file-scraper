@@ -72,5 +72,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_REPO }}:${{ github.event.inputs.tag }}
+          tags: ${{ steps.docker_meta.outputs.tags }}
           platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8
