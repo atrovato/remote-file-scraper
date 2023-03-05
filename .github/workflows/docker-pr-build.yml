@@ -1,0 +1,38 @@
+name: Pull request tests
+run-name: Pull request tests ${{ github.head_ref }}
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Node.js build
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: 💽 Setup nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+      - name: 📦 Install NPM server packages
+        run: |
+          npm ci
+      - name: 🧐 Prettier check
+        run: |
+          npm run prettier
+      - name: 👕 ESlint
+        run: |
+          npm run eslint
+      - name: 🔐 Dependencies security audit
+        run: npm audit --production --audit-level=critical || true
