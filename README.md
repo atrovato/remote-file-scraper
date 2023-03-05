@@ -49,14 +49,15 @@ npm start
 
 ### Variables
 
-| Variable   | Description                                                                       | Type    | Default value | Example                         |
-| :--------- | :-------------------------------------------------------------------------------- | :------ | :------------ | :------------------------------ |
-| BATCH_MODE | Allow to run tool in batch mode, without user interaction                         | boolean | `false`       | BATCH_MODE=true`                |
-| URL        | The URL to scrap                                                                  | URL     |               | `URL=https://my-own-server.url` |
-| SCRAPER    | The key of the scraper to use, see [scrapers paragraph](#scrapers)                | String  |               | `SCRAPER=apache`                |
-| DOWNLOADER | The key of the downloader to use, see [downloader paragraph](#downloaders)        | String  |               | `DOWNLOADER=pyload`             |
-| LOG_LEVEL  | Level of log to print<br/>Possible values: `error, warn, info, debug, trace, log` | String  | `info`        | `LOG_LEVEL=debug`               |
-| RESULT_DIR | Path result storing                                                               | String  | `./tmp`       | `RESULT_DIR=/scraper`           |
+| Variable          | Description                                                                                       | Type    | Default value | Example                         |
+| :---------------- | :------------------------------------------------------------------------------------------------ | :------ | :------------ | :------------------------------ |
+| BATCH_MODE        | Allow to run tool in batch mode, without user interaction                                         | boolean | `false`       | BATCH_MODE=true`                |
+| URL               | The URL to scrap                                                                                  | URL     |               | `URL=https://my-own-server.url` |
+| SCRAPER           | The key of the scraper to use, see [scrapers paragraph](#scrapers)                                | String  |               | `SCRAPER=apache`                |
+| DOWNLOADER        | The key of the downloader to use, see [downloader paragraph](#downloaders)                        | String  |               | `DOWNLOADER=pyload`             |
+| LOG_LEVEL         | Level of log to print<br/>Possible values: `error, warn, info, debug, trace, log`                 | String  | `info`        | `LOG_LEVEL=debug`               |
+| RESULT_DIR        | Path result storing                                                                               | String  | `./tmp`       | `RESULT_DIR=/scraper`           |
+| FILTER_EXTENSIONS | List of extensions to filter files<br/>The leadinds dot is required, excepted for `<none>` value. | String  |               | `FILTER_EXTENSIONS=.nfo,.txt`   |
 
 ### Scrapers
 
