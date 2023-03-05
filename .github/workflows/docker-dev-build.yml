@@ -47,7 +47,7 @@ jobs:
         with:
           images: ${{ secrets.DOCKERHUB_REPO }}
           labels: |
-            org.opencontainers.image.title=Testp age
+            org.opencontainers.image.title=Test image
       - name: 💽 Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: 🐳 Set up Docker Buildx
